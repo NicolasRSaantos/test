@@ -8,139 +8,155 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    color: #242C34;
+}
+
+:root{
+    --dark: #242C34;
+    --light: #F2F2F2;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+h1, h2, p{
+    font-weight: 200;
+    font-style: normal;
+}
+
+#sessao-image, #descricao-image, .container, #box-projetos{
+        display: flex;
 }
 
 h1{
-    padding-top: 100px;
     text-align: center;
-    color: #242C34;
-    font-weight: 200;
-    font-style: normal;
     font-size: 80px;
 }
 
 h2{
     text-align: left;
-    color: #242C34;
-    font-weight: 200;
-    font-style: normal;
     font-size: 60px;  
 }
 
 p{
-    color: #242C34;
-    font-weight: 200;
-    font-style: normal;
     font-size: 40px;
     text-align: justify;
-    padding: 30px 300px 30px 300px;
 }
 /* Daqui para cima sao partes gerais do code*/
 
 
 
-#Name{
-    color: #F2F2F2;
-    font-weight: 200;
-    font-style: normal;
+.nome{
+    color: var(--light);
     font-size: 150px;
     margin-bottom: 0px;
 }
 
-#Description{
-    color: #F2F2F2;
-    font-weight: 200;
-    font-style: normal;
+#descricao-inicial{
+    color: var(--light);
     font-size: 60px;
     margin-top: -50px;
 }
 
-#Sessao-Image{
-    display: flex;
+#sessao-image{
     flex-direction: row;
     align-items: center;
-    gap: 50px;
-    padding-top: 25px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
-#Descricao-Image{
-    display: flex;
+#descricao-image{
     flex-direction: column;
     justify-content: center;
     padding-bottom: 400px;
     padding-left: 80px;
 }
 
-.Container{
-    display: flex;
+.container{
+    width: 100vw;
     flex-direction: column;
 }
 
 img{
     height: auto;
     width: 1300px;
-    box-shadow: 0px 5px 50px 0px rgba(0,0,0,0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 15px -4px, rgba(0, 0, 0, 0.3) 0px 0px 10px -1px;
     border-radius: 10px;
-    margin-top: 20px;
 }
 /* Daqui para cima é apenas partes do quadrado azul*/
 
 
 
-#Fundo-Azulado{
-    width: 100%;
-    height: 1850px;
-    background-color: #242C34;
-    text-align: column;
-    box-shadow: 0px 5px 50px 0px rgba(0,0,0,0.5);
+#fundo-azulado{
+    width: 100vw;
+    height: justify;
+    background-color: var(--dark);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 10px -4px, rgba(0, 0, 0, 0.3) 0px 1px 10px -1px;
 }
 
-#Fundo-branco{
+#fundo-branco{
     width: 100%;
-    height: 1900px;
-    background-color: #F2F2F2;
+    padding: 30px;
 }
 /* Daqui para cima sao quadrados definidos*/
 
 
 
-#Projetos{
+#projetos{
     padding-top: 100px;
-    color: #242C34;
+    color: var(--dark);
     font-weight: 200;
     font-size: 80px;
     text-align: left;
-    padding: 30px 300px 30px 300px;
+    padding: 30px 300px;
 }
 
-.CardBox{
+.cardbox{
     width: 850px;
     height: 500px;
-    background-color: #F2F2F2;
-    border-radius: 30px;
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+    background-color: var(--light);
+    border-radius: 60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 7px 10px -3px, rgba(0, 0, 0, 0.3) 0px 1px 3px -3px;
 }
 
-#Box-Projetos{
-    display: flex;
-    justify-content: space-between;
+.box-projetos{
     flex-direction: row;
     align-items: center;
-    margin-left: 300px;
-    margin-right: 300px;
 }
 
-.Descricao-Card{
-    color: #242C34;
-    font-weight: 200;
-    font-style: normal;
+.descricao-geral{
     font-size: 40px;
     text-align: justify;
-    padding: 30px 300px 30px 300px;
+    padding-inline:300px;
 }
 
-#Front-End{
-    padding: 0px 0px 0px 300px;
+.info-projeto p{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+}
+
+.projeto-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width:100%;
+    gap: 30px;
+    padding:0 300px;
+    padding-bottom: 5%;
+    box-sizing:border-box;
 }
 /* Daqui para cima sao definidos os projetos*/
 
+
+
+#rodape{
+    width: 100%;
+    height: 120px;
+    background-color: var(--dark);
+}
