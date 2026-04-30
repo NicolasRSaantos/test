@@ -15,6 +15,10 @@ body{
     --dark: #242C34;
     --light: #F2F2F2;
 }
+.centralizador{
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 html, body{
     margin:0;
@@ -33,16 +37,16 @@ h1, h2, p{
 
 h1{
     text-align: center;
-    font-size: 80px;
+    font-size: 40px;
 }
 
 h2{
     text-align: left;
-    font-size: 60px;  
+    font-size: 30px;  
 }
 
 p{
-    font-size: 40px;
+    font-size: 20px;
     text-align: justify;
 }
 /* Daqui para cima sao partes gerais do code*/
@@ -51,38 +55,38 @@ p{
 
 .nome{
     color: var(--light);
-    font-size: 150px;
+    font-size: 70px;
     margin-bottom: 0px;
+    padding-top: 30%;
 }
 
 #descricao-inicial{
     color: var(--light);
-    font-size: 60px;
-    margin-top: -50px;
+    margin-top: -30px;
 }
 
 #sessao-image{
     flex-direction: row;
     align-items: center;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 #descricao-image{
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 400px;
-    padding-left: 80px;
+    padding-left: 5%;
+    padding-bottom: 15%;
 }
 
 .container{
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
 }
 
 img{
     height: auto;
-    width: 1300px;
+    width: 35.3%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 15px -4px, rgba(0, 0, 0, 0.3) 0px 0px 10px -1px;
     border-radius: 10px;
 }
@@ -99,64 +103,87 @@ img{
 
 #fundo-branco{
     width: 100%;
-    padding: 30px;
+    padding-top: 30px;
 }
 /* Daqui para cima sao quadrados definidos*/
 
 
 
 #projetos{
-    padding-top: 100px;
+    padding-top: 70px;
     color: var(--dark);
     font-weight: 200;
-    font-size: 80px;
     text-align: left;
-    padding: 30px 300px;
 }
 
 .cardbox{
-    width: 850px;
-    height: 500px;
+    width: 450px;
+    height: 250px;
     background-color: var(--light);
-    border-radius: 60px;
+    border-radius: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 7px 10px -3px, rgba(0, 0, 0, 0.3) 0px 1px 3px -3px;
+    transition: 0.3s;
 }
 
 .box-projetos{
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
 
+.cardbox:hover{
+    transition: transform 0.3s ease;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 12px -5px, rgba(0, 0, 0, 0.3) 0px 1px 3px -3px;    
+}
+
 .descricao-geral{
-    font-size: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
     text-align: justify;
-    padding-inline:300px;
 }
 
 .info-projeto p{
     margin-top: -30px;
     display: flex;
     flex-direction: column;
-    max-width: 850px;
+    max-width: 400px;
 }
 
 .projeto-item{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: row;
-    width:100%;
-    gap: 30px;
-    padding:0 300px;
+    max-width:100%;
+    gap: 70px;
     padding-bottom: 5%;
     box-sizing:border-box;
 }
+
+#frontend, #backend, #github{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#frontend{
+    background-image: url("../imagens/frontend.png");
+ }
+
+#backend{
+    background-image: url("../imagens/backend.png");
+ }
+
+#github{
+    background-image: url("../imagens/github.jpg");
+ }
 /* Daqui para cima sao definidos os projetos*/
 
 
 
 #rodape{
     width: 100%;
-    height: 120px;
+    height: 50px;
     background-color: var(--dark);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px -15px 10px -4px, rgba(0, 0, 0, 0.3) 0px -1px 10px -1px;
 }

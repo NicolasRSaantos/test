@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="keyframes.css">
+
+        <link rel="icon" href="../imagens/curriculo.png" type="image/png">
 
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-        <title>Meu Curriculo</title>
 
     </head>
     <body>
@@ -16,7 +17,7 @@
         <div class="container">
             <div id="fundo-azulado">
                 <div id="sessao-image">
-                    <img src="Nicolas.png">
+                    <img src="../imagens/Nicolas.png">
                     <div id="descricao-image">
                         <h1 class="nome"> Nicolas Santos</h1>
                         <h2 id="descricao-inicial"> Desenvolvedor Full Stack</h2>
@@ -25,24 +26,27 @@
             </div>
         
             <div id="fundo-branco">
-                <h1>Olá!</h1>
-                <p class="descricao-geral">
-                    Sou estudante de Ciência da Computação, com grande interesse em tecnologia, inovação e soluções que geram impacto real. Tenho conhecimento em HTML, CSS, Java, SQL e Pandas, além de utilizar bastante o Figma no desenvolvimento de projetos pessoais, o que me ajuda a transformar ideias em algo mais visual e funcional.<br><br>
+                <div class="centralizador">
+                    <h1>Olá!</h1>
+                    <p class="descricao-geral">
+                        Sou estudante de Ciência da Computação, com grande interesse em tecnologia, inovação e soluções que geram impacto real. Tenho conhecimento em HTML, CSS, Java, SQL e Pandas, além de utilizar bastante o Figma no desenvolvimento de projetos pessoais, o que me ajuda a transformar ideias em algo mais visual e funcional.<br><br>
 
-                    Também venho me aprofundando no desenvolvimento de aplicações e atualmente sigo a trilha de React Native na Alura, buscando evoluir na criação de aplicativos mobile e ganhar mais experiência prática.<br><br>
-                    
-                    Sempre procuro ser proativo, com pensamento analítico e tenho facilidade de comunicação, o que contribui para trabalhar bem em equipe e buscar soluções eficientes. Estou sempre aprendendo, evoluindo na prática e em busca de novos desafios que me permitam evoluir como profissional.<br><br>
-                    
-                    Caso queira ver alguns deles, basta clicar em algum dos projetos abaixo! :) 
-                </p>
+                        Também venho me aprofundando no desenvolvimento de aplicações e atualmente sigo a trilha de React Native na Alura, buscando evoluir na criação de aplicativos mobile e ganhar mais experiência prática.<br><br>
+                        
+                        Sempre procuro ser proativo, com pensamento analítico e tenho facilidade de comunicação, o que contribui para trabalhar bem em equipe e buscar soluções eficientes. Estou sempre aprendendo, evoluindo na prática e em busca de novos desafios que me permitam evoluir como profissional.<br><br>
+                        
+                        Caso queira ver alguns deles, basta clicar em algum dos projetos abaixo! :) 
+                    </p>
+                </div>
             </div>
 
-            <div>
+            <div class="centralizador">
                 <h1 id="projetos">Projetos</h1>
 
                 <div class="projeto-item">
+                    
                     <div class="box-projetos">
-                        <div class="cardbox"></div>
+                        <a href="https://seulink.com" target="_blank"><div class="cardbox" id="frontend"></div></a>
 
                         <div class="info-projeto">
                             <h2>Front-End</h2>
@@ -51,8 +55,8 @@
                         </div>
 
                     </div>
-                    <div class="box-projetos">
-                        <div class="cardbox"></div>
+                        <div class="box-projetos">
+                        <a href="https://seulink.com" target="_blank"><div class="cardbox" id="backend"></div></a>
 
                         <div class="info-projeto">
                             <h2>Back-End</h2>
@@ -62,8 +66,8 @@
 
                         
                     </div>
-                    <div class="box-projetos">
-                        <div class="cardbox"></div>
+                        <div class="box-projetos">
+                        <a href="https://seulink.com" target="_blank"><div class="cardbox" id="github"></div></a>
 
                         <div class="info-projeto">
                             <h2>GitHub</h2>
@@ -71,12 +75,23 @@
                         </div>
 
                         
-                    </div> 
+                    </div></a>
                 </div>
             </div>
 
             <div id="rodape"></div>
         </div>
+
+         <script>
+                    const base = "Bem vindo ao meu portifolio!!    🏃‍➡️ 💸 ";
+            let i = 0;
+
+            setInterval(() => {
+            const texto = base.substring(i) + base.substring(0, i);
+            document.title = texto;
+            i = (i + 1) % base.length;
+            }, 90);
+        </script>
 
     </body>
 </html>
