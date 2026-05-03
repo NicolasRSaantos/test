@@ -167,15 +167,15 @@ img{
 }
 
 #frontend{
-    background-image: url("../imagens/frontend.png");
+    background-image: url("./Imagens/frontend.png");
  }
 
 #backend{
-    background-image: url("../imagens/backend.png");
+    background-image: url("./imagens/backend.png");
  }
 
 #github{
-    background-image: url("../imagens/github.jpg");
+    background-image: url("./imagens/github.jpg");
  }
 /* Daqui para cima sao definidos os projetos*/
 
